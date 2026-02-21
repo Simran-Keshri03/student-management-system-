@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎓 Online Student Management System</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Add Student</h2>
+        <form id="studentForm">
+            <input type="hidden" id="studentId">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="course" placeholder="Course" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <button type="submit">Save Student</button>
+        </form>
+    </section>
+
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search student by name...">
+    </section>
+
+    <section class="table-section">
+        <h2>Student Records</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable">
+            </tbody>
+        </table>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
